@@ -1,0 +1,9 @@
+name = d7pf_security_atts
+description = Security attributes with an argument of taxonomy
+core = 7.x
+package = D7 Upgrade
+dependencies[] = ctools
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = d7pf_security_atts
