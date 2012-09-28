@@ -12,8 +12,8 @@ function d7pf_security_atts_views_default_views() {
 
   $view = new view();
   $view->name = 'd7pf_security_atts';
-  $view->description = '';
-  $view->tag = 'default';
+  $view->description = 'Security attributes with tax as an argument';
+  $view->tag = 'security, d7pf';
   $view->base_table = 'node';
   $view->human_name = 'd7pf_security_atts';
   $view->core = 7;
@@ -36,7 +36,6 @@ function d7pf_security_atts_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'There are no security attributes associated with  %1';
   $handler->display->display_options['empty']['area']['format'] = '1';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
   /* Field: Content: Title */
@@ -86,8 +85,8 @@ function d7pf_security_atts_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'security-atts';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
+  /* Display: PP Argument */
+  $handler = $view->new_display('page', 'PP Argument', 'page_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'sec/%/atts';
   $export['d7pf_security_atts'] = $view;
