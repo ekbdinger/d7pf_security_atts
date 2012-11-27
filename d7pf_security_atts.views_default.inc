@@ -22,7 +22,7 @@ function d7pf_security_atts_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'd7pf_security_atts';
+  $handler->display->display_options['title'] = 'Security Attributes';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
